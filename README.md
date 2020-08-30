@@ -1,1 +1,3 @@
 # CheckProgate
+## author
+Akio Takahashi
