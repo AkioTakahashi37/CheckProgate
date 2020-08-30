@@ -1,0 +1,20 @@
+{
+    "name": "check_progate",
+    "version": "1.0",
+    "description": "check_progate",
+    "permissions": ["notifications","alarms", "http://*/*", "https://*/*"],
+    "content_scripts": [
+        {
+            "matches": ["http://*/*", "https://*/*"],
+            "js": ["js/content_script.js"]
+        }
+    ],
+    "background": {
+      "scripts": ["js/background.js"],
+      "persistent": true
+    },
+    "browser_action": {
+      "default_popup": "html/popup.html"
+    },
+    "manifest_version": 2
+  }
